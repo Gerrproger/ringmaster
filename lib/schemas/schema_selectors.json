@@ -1,0 +1,41 @@
+{
+  "$id": "schema_selectors.json",
+  "title": "Selectors file",
+  "description": "Contains checks for the existence of selectors",
+  "type": "array",
+  "items": {
+    "title": "Selector test object",
+    "type": "object",
+    "required": ["name", "path", "selector"],
+    "additionalProperties": false,
+    "properties": {
+      "name": {
+        "description": "Name of the test case",
+        "type": "string"
+      },
+      "path": {
+        "description": "Paathname to the website page (relative to hostname)",
+        "type": "string",
+        "pattern": "^/"
+      },
+      "selector": {
+        "description": "Selector for the element",
+        "type": "string"
+      },
+      "visible": {
+        "description": "The element should be visible",
+        "type": "boolean"
+      },
+      "timeout": {
+        "description": "Timeout (in ms) to wait for the elemnt until test fails",
+        "type": "number",
+        "minimum": 0
+      },
+      "before": {
+        "description": "Execute actions before performing the check",
+        "type": "array",
+        "items": { "$ref": "schema_before.json" }
+      }
+    }
+  }
+}

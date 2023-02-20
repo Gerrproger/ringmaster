@@ -1,0 +1,59 @@
+{
+  "$id": "schema_cli.json",
+  "title": "CLI arguments and options",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "dirs": {
+      "title": "Dirs",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "opts": {
+      "title": "Options",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "headless": {
+          "description": "Run Chrome in headless (hidden) mode",
+          "type": "boolean"
+        },
+        "muted": {
+          "description": "Mute Chrome entirely (only when not headless)",
+          "type": "boolean"
+        },
+        "timeout": {
+          "description": "Default timeot (ms) used in all tests",
+          "type": "number",
+          "minimum": 0
+        },
+        "close": {
+          "description": "Automatically close Chrome after finish (only when not headless)",
+          "type": "boolean"
+        },
+        "executable": {
+          "description": "Path to Chrome executable",
+          "type": "string"
+        },
+        "output": {
+          "description": "Path to the output dir or disabling output (if false)",
+          "oneOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "boolean",
+              "const": false
+            }
+          ]
+        },
+        "view": {
+          "description": "Open generated Viewer file in a browser after finish (if output is enabled)",
+          "type": "boolean"
+        }
+      }
+    }
+  }
+}

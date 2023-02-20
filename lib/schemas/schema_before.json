@@ -1,0 +1,150 @@
+{
+  "$id": "schema_before.json",
+  "title": "Before section",
+  "description": "Executes events from list (one by one) before running checks (selectors)",
+  "oneOf": [
+    {
+      "title": "click",
+      "description": "Click the element",
+      "type": "object",
+      "required": ["event", "selector"],
+      "additionalProperties": false,
+      "properties": {
+        "event": {
+          "type": "string",
+          "const": "click"
+        },
+        "selector": {
+          "type": "string"
+        }
+      }
+    },
+    {
+      "title": "hover",
+      "description": "Hover over the element",
+      "type": "object",
+      "required": ["event", "selector"],
+      "additionalProperties": false,
+      "properties": {
+        "event": {
+          "type": "string",
+          "const": "hover"
+        },
+        "selector": {
+          "type": "string"
+        }
+      }
+    },
+    {
+      "title": "focus",
+      "description": "Focus the element",
+      "type": "object",
+      "required": ["event", "selector"],
+      "additionalProperties": false,
+      "properties": {
+        "event": {
+          "type": "string",
+          "const": "focus"
+        },
+        "selector": {
+          "type": "string"
+        }
+      }
+    },
+    {
+      "title": "blur",
+      "description": "Blur the element",
+      "type": "object",
+      "required": ["event", "selector"],
+      "additionalProperties": false,
+      "properties": {
+        "event": {
+          "type": "string",
+          "const": "blur"
+        },
+        "selector": {
+          "type": "string"
+        }
+      }
+    },
+    {
+      "title": "select",
+      "description": "Select options in the selector element",
+      "type": "object",
+      "required": ["event", "selector", "values"],
+      "additionalProperties": false,
+      "properties": {
+        "event": {
+          "type": "string",
+          "const": "select"
+        },
+        "selector": {
+          "type": "string"
+        },
+        "values": {
+          "title": "Values to select",
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    {
+      "title": "type",
+      "description": "Tyoe text in the input/form element",
+      "type": "object",
+      "required": ["event", "selector", "text"],
+      "additionalProperties": false,
+      "properties": {
+        "event": {
+          "type": "string",
+          "const": "type"
+        },
+        "selector": {
+          "type": "string"
+        },
+        "text": {
+          "type": "string"
+        }
+      }
+    },
+    {
+      "title": "reload",
+      "description": "Reload current page",
+      "type": "object",
+      "required": ["event"],
+      "additionalProperties": false,
+      "properties": {
+        "event": {
+          "type": "string",
+          "const": "reload"
+        }
+      }
+    },
+    {
+      "title": "back",
+      "description": "Go back in history",
+      "type": "object",
+      "required": ["event"],
+      "additionalProperties": false,
+      "properties": {
+        "event": {
+          "type": "string",
+          "const": "back"
+        }
+      }
+    },
+    {
+      "title": "offline",
+      "description": "Set current page network status as offline",
+      "type": "object",
+      "required": ["event"],
+      "additionalProperties": false,
+      "properties": {
+        "event": {
+          "type": "string",
+          "const": "offline"
+        }
+      }
+    }
+  ]
+}

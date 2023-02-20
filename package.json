@@ -1,0 +1,56 @@
+{
+  "name": "ringmaster",
+  "version": "1.0.0",
+  "author": "Gerrproger",
+  "license": "MIT",
+  "description": "CLI package for testing websites & checking their contents",
+  "repository": "https://github.com/Gerrproger/ringmaster.git",
+  "main": "lib/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node cli.js",
+    "start:interactive": "node cli-interactive.js",
+    "lint": "eslint . -c .eslintrc.cjs",
+    "lint:fix": "eslint . -c .eslintrc.cjs --fix",
+    "test": "tap tests",
+    "docs": "rimraf docs && jsonschema2md --input lib/schemas --schema-extension json --schema-out=- --out docs",
+    "transpile": "rimraf build && esbuild --platform=node --define:import.meta.url=__filename --bundle --outfile=build/ringmaster.cjs cli-interactive.js",
+    "compile": "rimraf bin && pkg --config pkg.config.json --public --public-packages '*' --no-bytecode --compress Brotli build/ringmaster.cjs",
+    "build": "$npm_execpath run docs && echo 'Transpiling...' && $npm_execpath run transpile > '/dev/null' 2>&1 && echo 'Compiling...' && $npm_execpath run compile > '/dev/null' 2>&1 && rimraf build"
+  },
+  "bin": {
+    "ringmaster": "./cli.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "ajv": "^8.12.0",
+    "chalk": "^5.2.0",
+    "commander": "^10.0.0",
+    "dotenv": "^16.0.3",
+    "inquirer": "^9.1.4",
+    "inquirer-select-directory": "^1.2.0",
+    "is-interactive": "^2.0.0",
+    "open": "^8.4.0",
+    "puppeteer": "~19.6.3",
+    "puppeteer-extra": "^3.3.4",
+    "puppeteer-extra-plugin-recaptcha": "^3.6.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.1",
+    "puppeteer-extra-plugin-user-preferences": "^2.4.0",
+    "wrap-ansi": "^8.1.0"
+  },
+  "devDependencies": {
+    "@adobe/jsonschema2md": "^7.1.5",
+    "@babel/eslint-parser": "^7.19.1",
+    "@babel/plugin-syntax-import-assertions": "^7.20.0",
+    "esbuild": "^0.17.5",
+    "eslint": "^8.34.0",
+    "pkg": "^5.8.0",
+    "rimraf": "^4.1.2",
+    "tap": "^16.3.4"
+  },
+  "resolutions": {
+    "clone-deep": "^4.0.1"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "scripts": [
+    "node_modules/puppeteer/lib/*.js",
+    "node_modules/puppeteer-extra-plugin-stealth/**/*.js"
+  ],
+  "assets": ["lib/*.html", "sample-test/*.json"],
+  "outputPath": "bin",
+  "targets": [
+    "latest-macos-arm64",
+    "latest-macos-x64",
+    "latest-linux-arm64",
+    "latest-linux-x64",
+    "latest-win-arm64",
+    "latest-win-x64"
+  ]
+}

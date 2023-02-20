@@ -1,0 +1,16 @@
+{
+  "$id": "schema_localStorage.json",
+  "title": "Local Storage object",
+  "description": "Used to set localStorage items before executing a test suit",
+  "type": "object",
+  "required": ["name", "value"],
+  "additionalProperties": false,
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    }
+  }
+}

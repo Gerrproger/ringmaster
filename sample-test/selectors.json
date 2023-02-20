@@ -1,0 +1,23 @@
+[
+  {
+    "path": "/",
+    "name": "Main header",
+    "selector": "h1"
+  },
+  {
+    "path": "/",
+    "name": "Trial links",
+    "selector": "a[href^=\"https://enterprise.github.com/trial\"]",
+    "before": [
+      {
+        "event": "click",
+        "selector": ".home-campaign-enterprise"
+      }
+    ]
+  },
+  {
+    "path": "/login",
+    "name": "Login button",
+    "selector": "input[name=\"commit\"]"
+  }
+]

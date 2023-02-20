@@ -1,0 +1,75 @@
+{
+  "$id": "schema_config.json",
+  "title": "Config file",
+  "description": "This is the main confiration for a test",
+  "type": "object",
+  "required": ["name", "host"],
+  "additionalProperties": false,
+  "properties": {
+    "name": {
+      "description": "Test suit name",
+      "type": "string"
+    },
+    "host": {
+      "description": "Website hostname for this test suite (only one)",
+      "type": "string",
+      "pattern": "^(([a-zA-Z0-9]|[a-zA-Z0-9][a-zA-Z0-9\\-]*[a-zA-Z0-9])\\.)*([A-Za-z0-9]|[A-Za-z0-9][A-Za-z0-9\\-]*[A-Za-z0-9])$"
+    },
+    "headless": {
+      "description": "Run Chrome in headless (hidden) mode",
+      "type": "boolean",
+      "default": true
+    },
+    "muted": {
+      "description": "Mute Chrome entirely (only when not headless)",
+      "type": "boolean",
+      "default": true
+    },
+    "timeout": {
+      "description": "Default timeot (ms) used in all tests",
+      "type": "number",
+      "minimum": 0,
+      "default": 30000
+    },
+    "close": {
+      "description": "Automatically close Chrome after finish (only when not headless)",
+      "type": "boolean",
+      "default": true
+    },
+    "executable": {
+      "description": "Path to Chrome executable",
+      "type": "string"
+    },
+    "output": {
+      "description": "Path to the output dir or disabling output (if false)",
+      "oneOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "boolean",
+          "const": false
+        }
+      ]
+    },
+    "view": {
+      "description": "Open generated Viewer file in a browser after finish (if output is enabled)",
+      "type": "boolean",
+      "default": false
+    },
+    "viewport": {
+      "description": "Default viweport dimensions for all test cases",
+      "$ref": "schema_viewport.json"
+    },
+    "cookies": {
+      "description": "Cookies to set before running test cases",
+      "type": "array",
+      "items": { "$ref": "schema_cookie.json" }
+    },
+    "localStorage": {
+      "description": "Local Storage items to set before running test cases",
+      "type": "array",
+      "items": { "$ref": "schema_localStorage.json" }
+    }
+  }
+}

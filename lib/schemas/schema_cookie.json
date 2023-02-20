@@ -1,0 +1,34 @@
+{
+  "$id": "schema_cookie.json",
+  "title": "Cookie object",
+  "description": "Used to set cookies before executing a test suit",
+  "type": "object",
+  "required": ["name", "value"],
+  "additionalProperties": false,
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    },
+    "domain": {
+      "type": "string"
+    },
+    "path": {
+      "type": "string"
+    },
+    "expires": {
+      "type": "number"
+    },
+    "httpOnly": {
+      "type": "boolean"
+    },
+    "secure": {
+      "type": "boolean"
+    },
+    "session": {
+      "type": "boolean"
+    }
+  }
+}

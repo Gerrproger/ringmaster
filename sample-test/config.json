@@ -1,0 +1,22 @@
+{
+  "host": "github.com",
+  "name": "ringmaster test",
+  "headless": true,
+  "muted": false,
+  "close": false,
+  "view": false,
+  "output": false,
+  "timeout": 10000,
+  "cookies": [
+    {
+      "name": "ringmaster",
+      "value": "foo"
+    }
+  ],
+  "localStorage": [
+    {
+      "name": "ringmaster",
+      "value": "bar"
+    }
+  ]
+}

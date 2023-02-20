@@ -1,0 +1,6 @@
+{
+  "skipDownload": true,
+  "experiments": {
+    "macArmChromiumEnabled": true
+  }
+}

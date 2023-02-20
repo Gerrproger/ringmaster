@@ -1,0 +1,20 @@
+{
+  "$id": "schema_viewport.json",
+  "title": "Viewport object",
+  "description": "Used to set the viewport before executing a test suit",
+  "type": "object",
+  "required": ["width", "height"],
+  "additionalProperties": false,
+  "properties": {
+    "width": {
+      "type": "number",
+      "minimum": 0,
+      "default": 800
+    },
+    "height": {
+      "type": "number",
+      "minimum": 0,
+      "default": 400
+    }
+  }
+}
