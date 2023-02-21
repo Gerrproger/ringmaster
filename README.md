@@ -1,13 +1,17 @@
 # Ringmaster
 
-**CLI package for testing websites & checking their contents.**
-
+<p align="center">
+  <img src="./ringmaster-logo.png" width="100"><br>
+  <b>CLI package for testing websites & checking their contents.</b>
+</p>
+ 
 ## Usage
 
 Install package - `npm install ringmaster -g` | `yarn global add ringmaster`.
 
 Run `ringmaster` from CLI.  
-Or you can launch it directly as executable from the **[bin folder](./bin)**.
+Or you can download and launch it directly from the **[releases section](https://github.com/Gerrproger/ringmaster/releases/)**.  
+Do not forget to make the file executable - `chmod +x ringmaster-macos-arm64`.
 
 It will search your config files in the folder `./_tests` by default.  
 You can pass desired folders as arguments: `ringmaster ./tests-folder ~/another-folder`.  

@@ -1,6 +1,6 @@
 {
   "name": "ringmaster",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Gerrproger",
   "license": "MIT",
   "description": "CLI package for testing websites & checking their contents",
