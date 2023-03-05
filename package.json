@@ -1,6 +1,6 @@
 {
   "name": "ringmaster",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Gerrproger",
   "license": "MIT",
   "description": "CLI package for testing websites & checking their contents",
@@ -26,19 +26,17 @@
   },
   "dependencies": {
     "ajv": "^8.12.0",
-    "chalk": "^5.2.0",
     "commander": "^10.0.0",
     "dotenv": "^16.0.3",
     "inquirer": "^9.1.4",
     "inquirer-select-directory": "^1.2.0",
-    "is-interactive": "^2.0.0",
+    "logion": "^1.0.0",
     "open": "^8.4.0",
     "puppeteer": "~19.6.3",
     "puppeteer-extra": "^3.3.4",
     "puppeteer-extra-plugin-recaptcha": "^3.6.6",
     "puppeteer-extra-plugin-stealth": "^2.11.1",
-    "puppeteer-extra-plugin-user-preferences": "^2.4.0",
-    "wrap-ansi": "^8.1.0"
+    "puppeteer-extra-plugin-user-preferences": "^2.4.0"
   },
   "devDependencies": {
     "@adobe/jsonschema2md": "^7.1.5",
