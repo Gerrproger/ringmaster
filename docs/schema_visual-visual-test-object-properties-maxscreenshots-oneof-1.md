@@ -1,23 +1,23 @@
-# Untitled string in Config file Schema
+# Untitled boolean in Visual config file Schema
 
 ```txt
-schema_config.json#/properties/output/oneOf/0
+schema_visual.json#/items/properties/maxScreenshots/oneOf/1
 ```
 
 
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                        |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :-------------------------------------------------------------------------------- |
-| Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [schema\_config.json\*](../lib/schemas/schema_config.json "open original schema") |
+| Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [schema\_visual.json\*](../lib/schemas/schema_visual.json "open original schema") |
 
-## 0 Type
+## 1 Type
 
-`string`
+`boolean`
 
-## 0 Default Value
+## 1 Constraints
 
-The default value is:
+**constant**: the value of this property must be equal to:
 
 ```json
-"./_results"
+false
 ```

@@ -1,27 +1,19 @@
-# Untitled number in Config file Schema
+# Untitled number in Visual config file Schema
 
 ```txt
-schema_config.json#/properties/timeout
+schema_visual.json#/items/properties/delay
 ```
 
-Default timeout (ms) used in all tests
+Delay (in ms) to wait after page load and before making the screenshot
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                        |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :-------------------------------------------------------------------------------- |
-| Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [schema\_config.json\*](../lib/schemas/schema_config.json "open original schema") |
+| Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [schema\_visual.json\*](../lib/schemas/schema_visual.json "open original schema") |
 
-## timeout Type
+## delay Type
 
 `number`
 
-## timeout Constraints
+## delay Constraints
 
 **minimum**: the value of this number must greater than or equal to: `0`
-
-## timeout Default Value
-
-The default value is:
-
-```json
-30000
-```

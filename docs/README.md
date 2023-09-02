@@ -6,15 +6,17 @@
 
 *   [CLI arguments and options](./schema_cli.md) – `schema_cli.json`
 
-*   [Config file](./schema_config.md "This is the main confiration for a test") – `schema_config.json`
+*   [Config file](./schema_config.md "This is the main configuration for a test") – `schema_config.json`
 
 *   [Cookie object](./schema_cookie.md "Used to set cookies before executing a test suit") – `schema_cookie.json`
 
 *   [Local Storage object](./schema_localstorage.md "Used to set localStorage items before executing a test suit") – `schema_localStorage.json`
 
-*   [Selectors file](./schema_selectors.md "Contains checks for the existence of selectors") – `schema_selectors.json`
+*   [Selectors config file](./schema_selectors.md "Contains checks for the existence of selectors") – `schema_selectors.json`
 
 *   [Viewport object](./schema_viewport.md "Used to set the viewport before executing a test suit") – `schema_viewport.json`
+
+*   [Visual config file](./schema_visual.md "Contains checks for visual changes by comparing screenshots") – `schema_visual.json`
 
 ## Other Schemas
 
@@ -23,6 +25,8 @@
 *   [Options](./schema_cli-properties-options.md) – `schema_cli.json#/properties/opts`
 
 *   [Selector test object](./schema_selectors-selector-test-object.md) – `schema_selectors.json#/items`
+
+*   [Visual test object](./schema_visual-visual-test-object.md) – `schema_visual.json#/items`
 
 *   [back](./schema_before-oneof-back.md "Go back in history") – `schema_before.json#/oneOf/7`
 
@@ -50,6 +54,8 @@
 
 *   [Untitled array in Config file](./schema_config-properties-localstorage.md "Local Storage items to set before running test cases") – `schema_config.json#/properties/localStorage`
 
-*   [Untitled array in Selectors file](./schema_selectors-selector-test-object-properties-before.md "Execute actions before performing the check") – `schema_selectors.json#/items/properties/before`
+*   [Untitled array in Selectors config file](./schema_selectors-selector-test-object-properties-before.md "Execute actions before performing the check") – `schema_selectors.json#/items/properties/before`
+
+*   [Untitled array in Visual config file](./schema_visual-visual-test-object-properties-before.md "Execute actions before performing the check") – `schema_visual.json#/items/properties/before`
 
 *   [Values to select](./schema_before-oneof-select-properties-values-to-select.md) – `schema_before.json#/oneOf/4/properties/values`

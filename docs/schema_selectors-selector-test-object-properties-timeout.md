@@ -1,10 +1,10 @@
-# Untitled number in Selectors file Schema
+# Untitled number in Selectors config file Schema
 
 ```txt
 schema_selectors.json#/items/properties/timeout
 ```
 
-Timeout (in ms) to wait for the elemnt until test fails
+Timeout (in ms) to wait for the element until test fails
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                              |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :-------------------------------------------------------------------------------------- |

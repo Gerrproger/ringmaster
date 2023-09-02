@@ -1,6 +1,6 @@
 {
   "$id": "schema_selectors.json",
-  "title": "Selectors file",
+  "title": "Selectors config file",
   "description": "Contains checks for the existence of selectors",
   "type": "array",
   "items": {
@@ -14,7 +14,7 @@
         "type": "string"
       },
       "path": {
-        "description": "Paathname to the website page (relative to hostname)",
+        "description": "Pathname to the website page (relative to hostname)",
         "type": "string",
         "pattern": "^/"
       },
@@ -24,12 +24,14 @@
       },
       "visible": {
         "description": "The element should be visible",
-        "type": "boolean"
+        "type": "boolean",
+        "default": false
       },
       "timeout": {
-        "description": "Timeout (in ms) to wait for the elemnt until test fails",
+        "description": "Timeout (in ms) to wait for the element until test fails",
         "type": "number",
-        "minimum": 0
+        "minimum": 0,
+        "default": 0
       },
       "before": {
         "description": "Execute actions before performing the check",

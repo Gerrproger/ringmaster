@@ -1,0 +1,76 @@
+{
+  "$id": "schema_visual.json",
+  "title": "Visual config file",
+  "description": "Contains checks for visual changes by comparing screenshots",
+  "type": "array",
+  "items": {
+    "title": "Visual test object",
+    "type": "object",
+    "required": ["name", "path"],
+    "additionalProperties": false,
+    "properties": {
+      "name": {
+        "description": "Name of the test case",
+        "type": "string"
+      },
+      "path": {
+        "description": "Pathname to the website page (relative to hostname)",
+        "type": "string",
+        "pattern": "^/"
+      },
+      "directory": {
+        "description": "Path to the screenshot dir",
+        "type": "string",
+        "default": "./_results/screenshots"
+      },
+      "sensitivity": {
+        "description": "Comparison sensitivity threshold (in float between 0 and 1, smaller more sensitive)",
+        "type": "number",
+        "minimum": 0,
+        "maximum": 1,
+        "default": 0.1
+      },
+      "allowedDifference": {
+        "description": "Allowed number of different pixels for images to be considered similar (in px)",
+        "type": "number",
+        "minimum": 0,
+        "default": 0
+      },
+      "delay": {
+        "description": "Delay (in ms) to wait after page load and before making the screenshot",
+        "type": "number",
+        "minimum": 0,
+        "default": 0
+      },
+      "maxScreenshots": {
+        "description": "Number of recent screenshots to store. If false, old screenshots will not be deleted",
+        "oneOf": [
+          {
+            "type": "number",
+            "minimum": 1,
+            "default": 1
+          },
+          {
+            "type": "boolean",
+            "const": false
+          }
+        ]
+      },
+      "scrollPage": {
+        "description": "Whether to automatically scroll to the bottom of the page",
+        "type": "boolean",
+        "default": true
+      },
+      "createDiffImg": {
+        "description": "Whether to place the differential png file in the screenshots folder",
+        "type": "boolean",
+        "default": false
+      },
+      "before": {
+        "description": "Execute actions before performing the check",
+        "type": "array",
+        "items": { "$ref": "schema_before.json" }
+      }
+    }
+  }
+}

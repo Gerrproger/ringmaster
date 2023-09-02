@@ -1,10 +1,10 @@
-# Untitled string in Selectors file Schema
+# Untitled string in Selectors config file Schema
 
 ```txt
 schema_selectors.json#/items/properties/path
 ```
 
-Paathname to the website page (relative to hostname)
+Pathname to the website page (relative to hostname)
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                              |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :-------------------------------------------------------------------------------------- |

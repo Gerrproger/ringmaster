@@ -4,7 +4,7 @@
 schema_config.json
 ```
 
-This is the main confiration for a test
+This is the main configuration for a test
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                      |
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------------ |
@@ -131,7 +131,7 @@ true
 
 ## timeout
 
-Default timeot (ms) used in all tests
+Default timeout (ms) used in all tests
 
 `timeout`
 

@@ -1,7 +1,7 @@
 {
   "$id": "schema_config.json",
   "title": "Config file",
-  "description": "This is the main confiration for a test",
+  "description": "This is the main configuration for a test",
   "type": "object",
   "required": ["name", "host"],
   "additionalProperties": false,
@@ -26,7 +26,7 @@
       "default": true
     },
     "timeout": {
-      "description": "Default timeot (ms) used in all tests",
+      "description": "Default timeout (ms) used in all tests",
       "type": "number",
       "minimum": 0,
       "default": 30000
@@ -44,7 +44,8 @@
       "description": "Path to the output dir or disabling output (if false)",
       "oneOf": [
         {
-          "type": "string"
+          "type": "string",
+          "default": "./_results"
         },
         {
           "type": "boolean",
@@ -58,7 +59,7 @@
       "default": false
     },
     "viewport": {
-      "description": "Default viweport dimensions for all test cases",
+      "description": "Default viewport dimensions for all test cases",
       "$ref": "schema_viewport.json"
     },
     "cookies": {

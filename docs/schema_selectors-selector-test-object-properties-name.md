@@ -1,4 +1,4 @@
-# Untitled string in Selectors file Schema
+# Untitled string in Selectors config file Schema
 
 ```txt
 schema_selectors.json#/items/properties/name

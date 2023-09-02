@@ -16,14 +16,14 @@ schema_selectors.json#/items
 
 # items Properties
 
-| Property              | Type      | Required | Nullable       | Defined by                                                                                                                        |
-| :-------------------- | :-------- | :------- | :------------- | :-------------------------------------------------------------------------------------------------------------------------------- |
-| [name](#name)         | `string`  | Required | cannot be null | [Selectors file](schema_selectors-selector-test-object-properties-name.md "schema_selectors.json#/items/properties/name")         |
-| [path](#path)         | `string`  | Required | cannot be null | [Selectors file](schema_selectors-selector-test-object-properties-path.md "schema_selectors.json#/items/properties/path")         |
-| [selector](#selector) | `string`  | Required | cannot be null | [Selectors file](schema_selectors-selector-test-object-properties-selector.md "schema_selectors.json#/items/properties/selector") |
-| [visible](#visible)   | `boolean` | Optional | cannot be null | [Selectors file](schema_selectors-selector-test-object-properties-visible.md "schema_selectors.json#/items/properties/visible")   |
-| [timeout](#timeout)   | `number`  | Optional | cannot be null | [Selectors file](schema_selectors-selector-test-object-properties-timeout.md "schema_selectors.json#/items/properties/timeout")   |
-| [before](#before)     | `array`   | Optional | cannot be null | [Selectors file](schema_selectors-selector-test-object-properties-before.md "schema_selectors.json#/items/properties/before")     |
+| Property              | Type      | Required | Nullable       | Defined by                                                                                                                               |
+| :-------------------- | :-------- | :------- | :------------- | :--------------------------------------------------------------------------------------------------------------------------------------- |
+| [name](#name)         | `string`  | Required | cannot be null | [Selectors config file](schema_selectors-selector-test-object-properties-name.md "schema_selectors.json#/items/properties/name")         |
+| [path](#path)         | `string`  | Required | cannot be null | [Selectors config file](schema_selectors-selector-test-object-properties-path.md "schema_selectors.json#/items/properties/path")         |
+| [selector](#selector) | `string`  | Required | cannot be null | [Selectors config file](schema_selectors-selector-test-object-properties-selector.md "schema_selectors.json#/items/properties/selector") |
+| [visible](#visible)   | `boolean` | Optional | cannot be null | [Selectors config file](schema_selectors-selector-test-object-properties-visible.md "schema_selectors.json#/items/properties/visible")   |
+| [timeout](#timeout)   | `number`  | Optional | cannot be null | [Selectors config file](schema_selectors-selector-test-object-properties-timeout.md "schema_selectors.json#/items/properties/timeout")   |
+| [before](#before)     | `array`   | Optional | cannot be null | [Selectors config file](schema_selectors-selector-test-object-properties-before.md "schema_selectors.json#/items/properties/before")     |
 
 ## name
 
@@ -37,7 +37,7 @@ Name of the test case
 
 *   cannot be null
 
-*   defined in: [Selectors file](schema_selectors-selector-test-object-properties-name.md "schema_selectors.json#/items/properties/name")
+*   defined in: [Selectors config file](schema_selectors-selector-test-object-properties-name.md "schema_selectors.json#/items/properties/name")
 
 ### name Type
 
@@ -45,7 +45,7 @@ Name of the test case
 
 ## path
 
-Paathname to the website page (relative to hostname)
+Pathname to the website page (relative to hostname)
 
 `path`
 
@@ -55,7 +55,7 @@ Paathname to the website page (relative to hostname)
 
 *   cannot be null
 
-*   defined in: [Selectors file](schema_selectors-selector-test-object-properties-path.md "schema_selectors.json#/items/properties/path")
+*   defined in: [Selectors config file](schema_selectors-selector-test-object-properties-path.md "schema_selectors.json#/items/properties/path")
 
 ### path Type
 
@@ -83,7 +83,7 @@ Selector for the element
 
 *   cannot be null
 
-*   defined in: [Selectors file](schema_selectors-selector-test-object-properties-selector.md "schema_selectors.json#/items/properties/selector")
+*   defined in: [Selectors config file](schema_selectors-selector-test-object-properties-selector.md "schema_selectors.json#/items/properties/selector")
 
 ### selector Type
 
@@ -101,7 +101,7 @@ The element should be visible
 
 *   cannot be null
 
-*   defined in: [Selectors file](schema_selectors-selector-test-object-properties-visible.md "schema_selectors.json#/items/properties/visible")
+*   defined in: [Selectors config file](schema_selectors-selector-test-object-properties-visible.md "schema_selectors.json#/items/properties/visible")
 
 ### visible Type
 
@@ -109,7 +109,7 @@ The element should be visible
 
 ## timeout
 
-Timeout (in ms) to wait for the elemnt until test fails
+Timeout (in ms) to wait for the element until test fails
 
 `timeout`
 
@@ -119,7 +119,7 @@ Timeout (in ms) to wait for the elemnt until test fails
 
 *   cannot be null
 
-*   defined in: [Selectors file](schema_selectors-selector-test-object-properties-timeout.md "schema_selectors.json#/items/properties/timeout")
+*   defined in: [Selectors config file](schema_selectors-selector-test-object-properties-timeout.md "schema_selectors.json#/items/properties/timeout")
 
 ### timeout Type
 
@@ -141,7 +141,7 @@ Execute actions before performing the check
 
 *   cannot be null
 
-*   defined in: [Selectors file](schema_selectors-selector-test-object-properties-before.md "schema_selectors.json#/items/properties/before")
+*   defined in: [Selectors config file](schema_selectors-selector-test-object-properties-before.md "schema_selectors.json#/items/properties/before")
 
 ### before Type
 

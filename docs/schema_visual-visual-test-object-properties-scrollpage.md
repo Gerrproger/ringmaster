@@ -1,23 +1,23 @@
-# Untitled string in Config file Schema
+# Untitled boolean in Visual config file Schema
 
 ```txt
-schema_config.json#/properties/output/oneOf/0
+schema_visual.json#/items/properties/scrollPage
 ```
 
-
+Whether to automatically scroll to the bottom of the page
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                        |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :-------------------------------------------------------------------------------- |
-| Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [schema\_config.json\*](../lib/schemas/schema_config.json "open original schema") |
+| Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [schema\_visual.json\*](../lib/schemas/schema_visual.json "open original schema") |
 
-## 0 Type
+## scrollPage Type
 
-`string`
+`boolean`
 
-## 0 Default Value
+## scrollPage Default Value
 
 The default value is:
 
 ```json
-"./_results"
+true
 ```

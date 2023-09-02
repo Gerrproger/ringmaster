@@ -1,23 +1,23 @@
-# Untitled string in Config file Schema
+# Untitled string in Visual config file Schema
 
 ```txt
-schema_config.json#/properties/output/oneOf/0
+schema_visual.json#/items/properties/directory
 ```
 
-
+Path to the screenshot dir
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                        |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :-------------------------------------------------------------------------------- |
-| Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [schema\_config.json\*](../lib/schemas/schema_config.json "open original schema") |
+| Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [schema\_visual.json\*](../lib/schemas/schema_visual.json "open original schema") |
 
-## 0 Type
+## directory Type
 
 `string`
 
-## 0 Default Value
+## directory Default Value
 
 The default value is:
 
 ```json
-"./_results"
+"./_results/screenshots"
 ```

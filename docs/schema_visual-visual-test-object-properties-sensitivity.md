@@ -1,27 +1,29 @@
-# Untitled number in Config file Schema
+# Untitled number in Visual config file Schema
 
 ```txt
-schema_config.json#/properties/timeout
+schema_visual.json#/items/properties/sensitivity
 ```
 
-Default timeout (ms) used in all tests
+Comparison sensitivity threshold (in float between 0 and 1, smaller more sensitive)
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                        |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :-------------------------------------------------------------------------------- |
-| Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [schema\_config.json\*](../lib/schemas/schema_config.json "open original schema") |
+| Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [schema\_visual.json\*](../lib/schemas/schema_visual.json "open original schema") |
 
-## timeout Type
+## sensitivity Type
 
 `number`
 
-## timeout Constraints
+## sensitivity Constraints
+
+**maximum**: the value of this number must smaller than or equal to: `1`
 
 **minimum**: the value of this number must greater than or equal to: `0`
 
-## timeout Default Value
+## sensitivity Default Value
 
 The default value is:
 
 ```json
-30000
+0.1
 ```

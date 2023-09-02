@@ -1,4 +1,4 @@
-# Untitled boolean in Selectors file Schema
+# Untitled boolean in Selectors config file Schema
 
 ```txt
 schema_selectors.json#/items/properties/visible

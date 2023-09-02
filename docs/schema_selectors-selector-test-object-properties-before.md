@@ -1,4 +1,4 @@
-# Untitled array in Selectors file Schema
+# Untitled array in Selectors config file Schema
 
 ```txt
 schema_selectors.json#/items/properties/before
