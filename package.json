@@ -1,6 +1,6 @@
 {
   "name": "ringmaster",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "author": "Gerrproger",
   "license": "MIT",
   "description": "CLI package for testing websites & checking their contents",
@@ -31,7 +31,7 @@
     "inquirer": "^9.2.10",
     "inquirer-select-directory": "^1.2.0",
     "logion": "^1.0.0",
-    "open": "^9.1.0",
+    "open": "^8.4.2",
     "pixelmatch": "^5.3.0",
     "pngjs": "^7.0.0",
     "puppeteer": "^21.1.1",
