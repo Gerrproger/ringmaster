@@ -39,3 +39,4 @@ lerna-debug.log*
 *.tmp
 /build
 /bin
+/sample-screenshot

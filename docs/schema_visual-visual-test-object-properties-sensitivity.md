@@ -4,7 +4,7 @@
 schema_visual.json#/items/properties/sensitivity
 ```
 
-Comparison sensitivity threshold (in float between 0 and 1, smaller more sensitive)
+Comparison sensitivity threshold (in float between 0 and 1, larger is more sensitive)
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                        |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :-------------------------------------------------------------------------------- |
@@ -25,5 +25,5 @@ Comparison sensitivity threshold (in float between 0 and 1, smaller more sensiti
 The default value is:
 
 ```json
-0.1
+0.9
 ```

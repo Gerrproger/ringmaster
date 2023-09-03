@@ -24,11 +24,11 @@
         "default": "./_results/screenshots"
       },
       "sensitivity": {
-        "description": "Comparison sensitivity threshold (in float between 0 and 1, smaller more sensitive)",
+        "description": "Comparison sensitivity threshold (in float between 0 and 1, larger is more sensitive)",
         "type": "number",
         "minimum": 0,
         "maximum": 1,
-        "default": 0.1
+        "default": 0.9
       },
       "allowedDifference": {
         "description": "Allowed number of different pixels for images to be considered similar (in px)",

@@ -74,7 +74,7 @@ To run tests, use: `npm run test` | `yarn test`.
 
 ### TODO
 
-- Add new test type: content comparison.
+- Add new test types (~~visual via screenshots~~, content comparison).
 - Make it possible to declare configs directly as objects and not only from files.
 - Add exported config file formats and not only JSON (config.js/.mjs/.cjs).
 - Write more tests with coverage.
