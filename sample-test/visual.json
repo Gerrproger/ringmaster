@@ -1,0 +1,14 @@
+[
+  {
+    "path": "/404",
+    "name": "Page 404 (prepare screenshot)",
+    "delay": 200,
+    "directory": "./sample-screenshot"
+  },
+  {
+    "path": "/404",
+    "name": "Page 404",
+    "delay": 200,
+    "directory": "./sample-screenshot"
+  }
+]

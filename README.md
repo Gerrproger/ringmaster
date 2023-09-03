@@ -18,7 +18,7 @@ You can pass desired folders as arguments: `ringmaster ./tests-folder ~/another-
 Or, you can pass folders as `--dir` option: `ringmaster --dir dir1 --dir dir2`.
 
 Result files are exported to the `./_results` folder by default.\
-You can change it with `--outupt` option: `ringmaster --no-output`.
+You can change it with `--output` option: `ringmaster --no-output`.
 
 ### Options
 
@@ -43,6 +43,7 @@ For test cases, you need a separate config file for each test type.
 **Supported test types:**
 
 - **[Selectors](./docs/schema_selectors.md)**
+- **[Visual](./docs/schema_visual.md)**
 
 You can configure actions to perform before the test check through the **[Before](./docs/schema_before.md)** section.
 

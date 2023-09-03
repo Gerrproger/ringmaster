@@ -55,6 +55,7 @@
         --color-warn: #f1a3a3;
         --color-info: #a3a3f1;
         --color-success: #8dee8d;
+        --color-dimmed: #a5a5a5;
         --border-separator: 0.1rem solid var(--color-trans-2);
         --transition: 0.2s ease-out;
         font-size: 16px;
@@ -243,6 +244,10 @@
 
       .warn {
         color: var(--color-warn);
+      }
+
+      .dimmed {
+        color: var(--color-dimmed);
       }
 
       .info {
@@ -651,8 +656,8 @@
                 </div>
               </div>
 
-              <div v-if="!cases.results.length" class="message warn">
-                No Test Results found!
+              <div v-if="!cases.results.length" class="message dimmed">
+                No Test Results found
               </div>
 
               <div v-for="result in cases.results" class="result">
@@ -688,6 +693,14 @@
                         </div>
 
                         <div class="col aggregated-info controls">
+                          <a
+                            v-if="cases.type === 'visual'"
+                            :href="item.screenshot"
+                            target="_blank"
+                            class="button small info"
+                          >
+                            Open Screenshot
+                          </a>
                           <a
                             v-if="item.sourceFile"
                             class="button button_dimmed small"
@@ -745,19 +758,27 @@
                     </button>
 
                     <button
-                      v-if="!result._selectorShown"
+                      v-if="cases.type === 'selectors' && !result._selectorShown"
                       @click="result._selectorShown=true;result._errorShown=false;result._detailsShown=false;"
                       class="small info"
                     >
                       Show Selector
                     </button>
                     <button
-                      v-if="result._selectorShown"
+                      v-if="cases.type === 'selectors' && result._selectorShown"
                       @click="result._selectorShown=false;"
                       class="small info"
                     >
                       Hide Selector
                     </button>
+                    <a
+                      v-if="cases.type === 'visual' && !aggregated"
+                      :href="result.screenshot"
+                      target="_blank"
+                      class="button small info"
+                    >
+                      Open Screenshot
+                    </a>
 
                     <button
                       v-scope="{hack: 0}"
@@ -918,7 +939,9 @@
 
             for (const cases of suit.cases) {
               cases.results = cases.results.map((result) => {
-                result._selectorShown = false;
+                if (cases.type === 'selectors') {
+                  result._selectorShown = false;
+                }
                 result._errorShown = false;
 
                 return result;
@@ -970,6 +993,7 @@
                 ].aggregated.push({
                   success: result.success,
                   error: result.error,
+                  screenshot: result.screenshot,
                   date: suit.date,
                   suitId: suit.id,
                   inputDir: suit.inputDir,
