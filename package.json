@@ -43,7 +43,7 @@
     "@adobe/jsonschema2md": "^7.1.5",
     "@babel/eslint-parser": "^7.22.11",
     "@babel/plugin-syntax-import-assertions": "^7.20.5",
-    "esbuild": "^0.19.2",
+    "esbuild": "^0.24.0",
     "eslint": "^8.48.0",
     "pkg": "^5.8.1",
     "rimraf": "^5.0.1",
