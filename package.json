@@ -40,7 +40,7 @@
     "puppeteer-extra-plugin-user-preferences": "^2.4.1"
   },
   "devDependencies": {
-    "@adobe/jsonschema2md": "^7.1.5",
+    "@adobe/jsonschema2md": "^8.0.0",
     "@babel/eslint-parser": "^7.22.11",
     "@babel/plugin-syntax-import-assertions": "^7.20.5",
     "esbuild": "^0.19.2",
